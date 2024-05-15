@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 6fr 1.5fr;
+    grid-template-areas: 
+    'nav'
+    'aside'
+    'main'
+    'footer';
+}
+
+nav {
+    grid-area: nav;
+    background-color: #16a085;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* padding-top: 1em; */
+}
+
+nav p {
+    margin: 0;
+}
+
+nav .logo {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+nav .logo p {
+    font-size: 24px;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #E2E2E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    /* box-sizing: border-box; */
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+aside p {
+    margin: 0.5em;
+}
+
+aside form {
+    padding-bottom: 0.5em;
+}
+
+aside select {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main {
+    text-align: center;
+    grid-area: main;
+    padding: 1em;
+    margin: auto;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+
+}
+
+.card {
+    border: 1px solid #E2E2E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em auto;
+    width: 60%;
+    box-shadow: 0px 5px 18px #E2E2E2;
+}
+
+.card img {
+    width: 100%;
+    margin: auto;
+    filter: grayscale();
+    transition: filter 0.2s ease-in-out;
+}
+
+.card button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 0.7em;
+    border-radius: 10px;
+    border: 0;
+}
+
+.page-selector button {
+    border: 1px grey;
+    color: #1abc9c;
+    padding: 0.5em;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    width: 80% auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #16a085;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 600;
+}
+
+footer i:hover {
+    color: #f1c40f;
+}
+
+a:hover {
+    color: #f1c40f;
+}
+
+button:hover {
+    background-color: #f1c40f;
+}
+
+.card img:hover {
+    filter: none;
+}
+
+@media (max-width: 992px) {
+    .grid-container {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-areas: 
+        'nav nav'
+        'aside main'
+        'footer footer';
+    }
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        justify-content: flex-start;
+    }
+    nav .burger-menu {
+        display: none;
+    }
+
+    nav {
+        padding-right: 4em;
+        box-sizing: border-box;
+    }
+    nav ul {
+        display: flex;
+        gap: 4em;
+        padding: 0.5em;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 0.5fr 6fr 1fr;
+        grid-template-areas: 
+        'nav aside'
+        'nav main'
+        'footer main';
+    }
+    .galeria {
+        grid-area: main;
+        padding: 0em;
+        /* margin: auto; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0;
+        /* box-sizing: border-box; */
+    }
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        /* margin: 0; */
+        padding: 0.5em;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .burger-menu {
+        display: none;
+    }
+    nav p {
+        padding: 0.5em
+    }
+}
+
+
+
