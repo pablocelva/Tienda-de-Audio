@@ -135,6 +135,7 @@ main {
     justify-content: center;
     align-self: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .mapa {
