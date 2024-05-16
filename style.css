@@ -18,7 +18,7 @@ body {
 
 nav {
     grid-area: nav;
-    background-color: #16a085;
+    background-color: #40407a;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@ main {
 }
 
 .card button {
-    background-color: #1abc9c;
+    background-color: #706fd3;
     color: white;
     padding: 0.7em;
     border-radius: 10px;
@@ -126,7 +126,7 @@ main {
 .page-selector button {
     margin-top: 2em;
     border: 1px grey;
-    color: #1abc9c;
+    color: #706fd3;
     padding: 0.5em;
 }
 
@@ -146,7 +146,7 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: #16a085;
+    background-color: #40407a;
     color: white;
     display: flex;
     flex-direction: column;
