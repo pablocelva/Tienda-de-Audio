@@ -92,7 +92,8 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5em;
-    
+    height: 60vh;
+    overflow-y: auto;
 }
 
 .card {
@@ -192,6 +193,8 @@ button:hover {
     }
     .galeria {
         grid-template-columns: 1fr;
+        height: 70vh;
+        overflow-y: auto;
     }
     aside {
         justify-content: flex-start;

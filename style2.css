@@ -86,6 +86,7 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: white;
+    text-align: center;
 }
 
 .mapa {
