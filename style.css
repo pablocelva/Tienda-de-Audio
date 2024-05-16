@@ -85,13 +85,14 @@ main {
     grid-area: main;
     padding: 1em;
     margin: auto;
+    /* overflow: scroll; */
 }
 
 .galeria {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5em;
-
+    
 }
 
 .card {
@@ -122,6 +123,7 @@ main {
 }
 
 .page-selector button {
+    margin-top: 2em;
     border: 1px grey;
     color: #1abc9c;
     padding: 0.5em;
@@ -223,18 +225,22 @@ button:hover {
     .galeria {
         grid-area: main;
         padding: 0em;
-        /* margin: auto; */
+        margin: auto;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 0;
-        /* box-sizing: border-box; */
+        box-sizing: border-box;
+        height: 75vh;
+        overflow-y: auto;
     }
     nav {
         flex-direction: column;
         justify-content: flex-start;
         padding: 0;
+        /* position: fixed; */
     }
     nav ul {
+        /* width: 100%; */
         display: flex;
         flex-direction: column;
         gap: 1em;
