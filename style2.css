@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
     grid-template-areas: 
     'nav'
     'main'
@@ -129,7 +129,7 @@ a:hover {
 @media (min-width: 576px) {
     .grid-container {
         grid-template-columns: 1fr 4fr;
-        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-rows: 1fr 10fr 1fr;
         grid-template-areas: 
         'nav nav'
         'main main'
