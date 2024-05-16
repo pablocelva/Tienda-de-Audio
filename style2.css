@@ -146,6 +146,8 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        /* width: auto;
+        overflow-x: auto; */
     }
     nav .burger-menu {
         display: none;
@@ -205,4 +207,22 @@ a:hover {
 }
 
 
+@keyframes slideIn {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
 
+.texto-principal {
+    animation: slideIn 0.6s ease-in;
+    /* transform: translateY(); */
+}
+
+
+.mapa {
+    animation: slideIn 0.6s ease-in;
+    /* transform: translateY(); */
+}
