@@ -222,12 +222,12 @@ a:hover {
 }
 
 .texto-principal {
-    animation: slideIn 1s ease-in;
+    animation: slideIn 0.5s ease-in;
     /* transform: translateY(); */
 }
 
 
 .mapa {
-    animation: slideIn 1s ease-in;
+    animation: slideIn 0.5s ease-in;
     /* transform: translateY(); */
 }
